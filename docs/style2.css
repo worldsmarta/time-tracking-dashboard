@@ -1,0 +1,26 @@
+.bg_col{
+    background-color:#0d1323;
+    /* height: auto; */
+    height: 100%;
+}
+
+.left_box{
+    /* height: 440px; */
+    width: 250px;
+}
+
+@media screen and (max-width:1023px) {
+    .left_box{
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    
+}
+
+@media screen and (min-width:1024px) {
+    .main_box{
+    width: 1000px;
+} 
+}

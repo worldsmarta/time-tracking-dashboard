@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Time tracking dashboard</title>
+</head>
+
+<body>
+    <div class=" bg_col py-28 w-full">
+        <div class="main_box lg:mx-auto">
+            <div class=" flex flex-col lg:flex-row">
+
+                <!-- left part -->
+                <div class=" rounded-2xl h-auto left_box mb-10 lg:mb-0 bg-col1 pb-2 lg:pb-0">
+                    <div class=" h-auto lg:h-80 w-auto rounded-2xl bg-col2">
+                        <div class=" px-10 py-4 lg:py-0">
+                            <div class=" flex flex-row lg:flex-col">
+                                <img src="./images/image-jeremy.png" alt=""
+                                    class="w-16 lg:w-20 mt-0 lg:mt-5 border-2 border-white rounded-full">
+
+                                <div class=" ml-5 lg:ml-0">
+                                    <p class=" text-gray-400 mt-0 lg:mt-7 text-lg">Report for</p>
+                                    <div class=" flex flex-row lg:flex-col">
+                                        <p class=" mt-0 lg:mt-4 text-white text-xl sm:text-4xl font-thin">Jeremy</p>
+                                        <p class=" text-white text-xl sm:text-4xl font-thin ml-2 lg:ml-0">Robson</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" flex flex-row lg:flex-col justify-between px-10 mt-4 text-col2 text-lg lg:text-base">
+                        <p class=" duration-500 cursor-pointer hover:text-white" id="daily">Daily</p>
+                        <p class=" lg:my-1 duration-500 cursor-pointer hover:text-white" id="weekly">Weekly</p>
+                        <p class="duration-500 cursor-pointer hover:text-white" id="monthly">Monthly</p>
+                    </div>
+                </div>
+
+                <!-- right part -->
+                <div class=" grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-3 mx-9 lg:mx-4 ">
+
+                    <!-- box1 -->
+                    <div class="w-auto lg:w-52 h-52 rounded-2xl bg-b1 relative overflow-hidden">
+                        <img src="./images/icon-work.svg" alt="" class=" w-10 right-2 absolute -top-1">
+                        <div
+                            class=" w-auto h-44 rounded-2xl px-2 sm:px-5 duration-500 bg-col1 hover:bg-hovcol my-10 cursor-pointer">
+
+                            <!-- top part -->
+                            <div class="flex flex-row flex-1 justify-between text-white font-bold">
+                                <p class=" text-xl mt-4">Work</p>
+                                <p class="text-2xl mt-2">...</p>
+                            </div>
+
+                            <!-- bottom part -->
+                            <div class=" flex flex-row lg:flex-col justify-between mt-5">
+                                <p class=" text-white text-3xl sm:text-5xl font-thin" id="work">0hr</p>
+                                <p class=" text-white text-md mt-3" id="lw_work">Select time tracking</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- box2 -->
+                    <div class="w-auto lg:w-52 h-52 rounded-2xl bg-b2 relative overflow-hidden">
+                        <img src="./images/icon-play.svg" alt="" class=" w-10 right-2 absolute -top-1">
+                        <div
+                            class=" w-auto h-44 rounded-2xl px-2 sm:px-5 duration-500 bg-col1 hover:bg-hovcol my-10 cursor-pointer">
+
+                            <!-- top part -->
+                            <div class="flex flex-row flex-1 justify-between text-white font-bold">
+                                <p class=" text-xl mt-4">Play</p>
+                                <p class="text-2xl mt-2">...</p>
+                            </div>
+
+                            <!-- bottom part -->
+                            <div class=" flex flex-row lg:flex-col justify-between mt-5">
+                                <p class=" text-white text-3xl sm:text-5xl font-thin" id="play">0hr</p>
+                                <p class=" text-white text-md mt-3" id="lw_play">Select time tracking</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- box3 -->
+                    <div class="w-auto lg:w-52 h-52 rounded-2xl bg-b3 relative overflow-hidden">
+                        <img src="./images/icon-study.svg" alt="" class=" w-10 right-2 absolute -top-1">
+                        <div
+                            class=" w-auto h-44 rounded-2xl px-2 sm:px-5 duration-500 bg-col1 hover:bg-hovcol my-10 cursor-pointer">
+
+                            <!-- top part -->
+                            <div class="flex flex-row flex-1 justify-between text-white font-bold">
+                                <p class=" text-xl mt-4">Study</p>
+                                <p class="text-2xl mt-2">...</p>
+                            </div>
+
+                            <!-- bottom part -->
+                            <div class=" flex flex-row lg:flex-col justify-between mt-5">
+                                <p class=" text-white text-3xl sm:text-5xl font-thin" id="study">0hr</p>
+                                <p class=" text-white text-md mt-3" id="lw_study">Select time tracking</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- box4 -->
+                    <div class="w-auto lg:w-52 h-52 rounded-2xl bg-b4 relative overflow-hidden">
+                        <img src="./images/icon-exercise.svg" alt="" class=" w-10 right-2 absolute -top-1">
+                        <div
+                            class=" w-auto h-44 rounded-2xl px-2 sm:px-5 duration-500 bg-col1 hover:bg-hovcol my-10 cursor-pointer">
+
+                            <!-- top part -->
+                            <div class="flex flex-row flex-1 justify-between text-white font-bold">
+                                <p class=" text-xl mt-4">Exercise</p>
+                                <p class="text-2xl mt-2">...</p>
+                            </div>
+
+                            <!-- bottom part -->
+                            <div class=" flex flex-row lg:flex-col justify-between mt-5">
+                                <p class=" text-white text-3xl sm:text-5xl font-thin" id="exc">0hr</p>
+                                <p class=" text-white text-md mt-3" id="lw_exc">Select time tracking</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- box5 -->
+                    <div class="w-auto lg:w-52 h-52 rounded-2xl bg-b5 relative overflow-hidden">
+                        <img src="./images/icon-social.svg" alt="" class=" w-8 right-2 absolute -top-1">
+                        <div
+                            class=" w-auto h-44 rounded-2xl px-2 sm:px-5 duration-500 bg-col1 hover:bg-hovcol my-10 cursor-pointer">
+
+                            <!-- top part -->
+                            <div class="flex flex-row flex-1 justify-between text-white font-bold">
+                                <p class=" text-xl mt-4">Social</p>
+                                <p class="text-2xl mt-2">...</p>
+                            </div>
+
+                            <!-- bottom part -->
+                            <div class=" flex flex-row lg:flex-col justify-between mt-5">
+                                <p class=" text-white text-3xl sm:text-5xl font-thin" id="soc">0hr</p>
+                                <p class=" text-white text-md mt-3" id="lw_soc">Select time tracking</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- box6 -->
+                    <div class="w-auto lg:w-52 h-52 rounded-2xl bg-b6 relative overflow-hidden">
+                        <img src="./images/icon-self-care.svg" alt="" class=" w-8 right-2 absolute -top-1">
+                        <div
+                            class=" w-auto h-44 rounded-2xl px-2 sm:px-5 duration-500 bg-col1 hover:bg-hovcol my-10 cursor-pointer">
+
+                            <!-- top part -->
+                            <div class="flex flex-row flex-1 justify-between text-white font-bold">
+                                <p class=" text-xl mt-4">Self Care</p>
+                                <p class="text-2xl mt-2">...</p>
+                            </div>
+
+                            <!-- bottom part -->
+                            <div class=" flex flex-row lg:flex-col justify-between mt-5">
+                                <p class=" text-white text-3xl sm:text-5xl font-thin" id="sc">0hr</p>
+                                <p class=" text-white text-md mt-3" id="lw_sc">Select time tracking</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
